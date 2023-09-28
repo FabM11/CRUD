@@ -27,6 +27,10 @@ if(!$declaracao->bind_param("siis", $nome, $idade, $numero, $email)) {
 }
 
 if (!$declaracao->execute()) {
-    echo "Execute failed: (" . $declaracao->errno . ") " . $declaracao->error;
+    echo "Erro na execução por favor contate o responsável pelo back-end da aplicação web, erro:
+     (" . $declaracao->errno . ") " . $declaracao->error;
 }
+
+//Quando acabar a execução ele vai para a pag:
+header('Location:../app/enviosucess.php');
 ?>
