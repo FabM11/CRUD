@@ -1,0 +1,7 @@
+CREATE TABLE MyGuests (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//UNSIGNED significa que o número não pode ser menor que 0, AUTO_INCREMENT ele incrementa o valor automaticamente
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+)
